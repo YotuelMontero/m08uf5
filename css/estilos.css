@@ -1,11 +1,22 @@
-p { 
-    color: blue;
+img {
+    width: 50%;
+    border: 1px solid red;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-.titulo {
+p { 
+    color: rgba(25, 0, 255, 0.5)
+}
+
+p.titulo {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: underline;
     text-align: center;
+}
+
+p span {
+
 }
