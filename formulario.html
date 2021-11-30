@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+   <h1>Formulario</h1> 
+   <form action="#" method="get">
+        <fieldset>
+           <legend>Datos personales:</legend>
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="name" placeholder="Itroduce tu nombre" maxlength="30">
+            <br><br>
+            <label for="fsurname">Apellidos:</label><br>
+            <input type="text" id="fsurname" name="surname" maxlength="30">
+            <br><br>
+        
+            Genero:<br>
+            <input type="radio" name="genero" id="hombre" value="H" checked="cheched"> 
+            <label for="hombre">Hombre:</label>
+
+            <input type="radio" name="genero" id="mujer" value="M">
+            <label for="mujer">Mujer:</label>
+        </fieldset>
+        <br><br>
+
+        Aficiones:<br>
+        <input type="checkbox" name="aficiones" id="hipica" value="hipica">
+        <label for="hipica">Hipica:</label>
+        <input type="checkbox" name="aficiones" id="pesca" value="pesca">
+        <label for="pesca">Pesca:</label>
+        <input type="checkbox" name="aficiones" id="musica" value="musisca">
+        <label for="musica">Musica</label>
+        <br><br>
+
+        <label for="pwd">Password:</label><br>
+        <input type="password" name="owd" id="pwd">
+        <br><br>
+
+        Estudios previos:
+        <select name="Estudios" id="estudios">
+            <option value="">Selecciona una opcion...</option>
+            <option value="SMX">CGFM SMX</option>
+            <option value="ASIX">CGFS ASIX</option>
+            <option value="DAM">CGFM DAM</option>
+            <option value="DAW">CGFS DAW</option>
+        </select>
+        <br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+        <br><br>
+
+
+        <input type="submit" value="Enviar" name="Enviar">
+        <input type="reset" value="Borrar" name="borrar">
+   </form>
+</body>
+</html>
