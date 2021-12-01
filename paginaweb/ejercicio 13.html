@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
+
 <body>
-    <h1>Curriculum</h1>
+    <h1 style="color: limegreen;"><center>Curriculum</center></h1>
+    <form action="#" method="get">
     <fieldset>
-        <legend style="color: blue;"> <i>Información Basica</i></legend>
-        <form action="#" method="get"></form>
-        <label for="fname">Nombre</label><br>
-        <input type="text" name="name" id="fname" placeholder="tunombre">
-        <br><br>
+        <fieldset style="background-color: coral;">
+            <legend style="color: blue;"> <i>Información Basica</i></legend>
+            <label for="fname">Nombre</label><br>
+            <input type="text" name="name" id="fname" placeholder="tunombre">
+            <br><br>
 
-        <label for="altura">Altura en centimetros</label><br>
-        <input type="number" id="altura" name="altura" min="150" max="210">
-        <br><br>
+            <label for="altura">Altura en centimetros</label><br>
+            <input type="number" id="altura" name="altura" min="150" max="210">
+            <br><br>
 
-        <label for="correo">Email</label><br>
-        <input type="text" name="correo" id="correo" placeholder="tuemail@dominio.com">
+            <label for="correo">Email</label><br>
+            <input type="text" name="correo" id="correo" placeholder="tuemail@dominio.com">
+            <br><br>
+
+            <label for="fecha de nacimineto">Fecha Nacimiento</label>
+            <input type="date">
+        </fieldset>
+
+        <fieldset style="background-color: limegreen;">
+            <legend style="color: orangered;"> <i>Nacionalidad</i></legend>
+            <input type="radio" name="nacionalidad" id="española" value="e" checked="cheched">
+            <label for="hombre">Española</label>
+            <input type="radio" name="nacionalidad" id="comunitario" value="c">
+            <label for="comunitario">Comunitario(UE)</label>
+            <input type="radio" name="genero" id="no comunitario" value="nc">
+            <label for="no comunitario">No comunitario</label>
+        </fieldset>
+
+        <fieldset style="background-color: mediumpurple;">
+            <legend style="color: purple;">Estudios</legend>
+            <select name="Estudios" id="estudios">
+                <option value="">Selecciona una opcion...</option>
+                <option value="SMX">CGFM SMX</option>
+                <option value="ASIX">CGFS ASIX</option>
+                <option value="DAM">CGFM DAM</option>
+                <option value="DAW">CGFS DAW</option>
+            </select>
+        </fieldset>
+
+        <fieldset style="background-color: lightskyblue;">
+            <legend style="color: red;">Idiomas</legend>
+            <input type="checkbox" name="idiomas" id="Catalán" value="Catalán">
+            <label for="Catalán">Catalán</label>
+            <input type="checkbox" name="idiomas" id="Castellano" value="Castellano">
+            <label for="Castellano">Castellano</label>
+            <input type="checkbox" name="idiomas" id="Ingles" value="Ingles">
+            <label for="ingles">Ingles</label>
+            <input type="checkbox" name="idiomas" id="Chino" value="Chino">
+            <label for="Chino">Chino</label>
+        </fieldset>
+
+        <fieldset style="background-color: grey;">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </fieldset>
     </fieldset>
-    
+    </form> 
 </body>
+
 </html>
